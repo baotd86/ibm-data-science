@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  jupyterlab:
+    image: jupyter/all-spark-notebook
+    ports:
+      - 8888:8888
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+     
+    volumes:
+      - ./:/home/jovyan/work
+ 
